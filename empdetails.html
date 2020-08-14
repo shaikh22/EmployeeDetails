@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="employee.css">
+    <title>Details</title>
+</head>
+<body>
+    <section class="mainform">
+        <form onsubmit="return validate()" method="post" action="welcome.html">
+            <div class="box">
+            <div class="form-head">
+                <h1>Welcome to Pixel Mind IT Solutions</h1>
+            </div>
+            <h2>Add Details of Employee</h2>
+    
+            <div class="form-body">
+            
+        <p>Employee Name<input type="text" id="Ename" placeholder="Enter Employee Name" autocomplete="off"></p> <br>
+            <span id="emname"></span>
+          <p>Phone Number<input type="text" id="phno" placeholder="Enter phone number" autocomplete="off"></p><br>
+                <span id="pno"></span>
+           <p>Email_id<input type="email" id="eml" placeholder="Enter Email" autocomplete="off"></p><br>
+           <span id="el"></span>
+              
+           <div class="form-dropdown">
+           <p>Department   <select id="dept">
+                <option>Select one</option>
+                <option>Development</option>
+                <option>Testing</option>
+                <option>System Admin</option>
+                <option>Finance</option>
+                <span id="deptfield"></span>
+            </select></p>
+        </div>
+    </div>
+
+        <div class="gndr">
+            Gender:<input type="radio" name="gender" value="male">Male
+            <input type="radio" name="gender" value="female">Female
+            <span id="gndrfiled"></span>
+        </div>
+  
+
+  <div class="age-form-dropdown">
+    <p>Age  <select id="agid">
+         <option>Select one</option>
+         <option>21-25</option>
+         <option>26-30</option>
+         <option>30-35</option>
+         <option>35-40</option>
+         <span id="agefiled"></span>
+     </select></p>
+ </div>
+ <div class="txtarea">
+    <p>Address<textarea rows="5" cols="110" id="adds"></textarea>
+        <span id="adsfiled"></span>
+</p>
+ </div>
+
+ <div class="knwtech-dropdowm">
+    <p>Known Technology<br>
+        <input type="checkbox" name="HTML" value="HTML" tabindex="1">HTML<br>
+        <input type="checkbox" name="CSS" value="CSS" tabindex="2">CSS<br>
+        <input type="checkbox" name="JAVASCRIPT" value="JAVASCRIPT" tabindex="3">JAVASCRIPT<br>
+        <input type="checkbox" name="JQUERY" value="JQUERY" tabindex="4">JQUERY<br>
+        <input type="checkbox" name="BOOTSTRAP" value="BOOTSTRAP" tabindex="5">BOOTSTRAP<br>
+
+            <span id="techfiled"></span>
+        </select></p>
+    </select></p>
+ </div>
+
+        <div class="form-footer">
+            <input type="submit" name="submit" value="Submit">
+            <input type="reset" id="btnone" value="Cancel">
+        </div>
+    </div>
+</div>
+        </section>
+        </form>
+</body>
+<script>
+ function validate(){
+        var empname=document.getElementById('Ename');
+        var phnumber=document.getElementById('phno');
+        var email=document.getElementById('eml');
+        var dep=document.getElementById('dept');
+        var gender=document.getElementById('gnrr');
+        var age=document.getElementById('agid');
+        var adrs=document.getElementById('adds');
+        var knwtec=document.getElementById('techno');
+
+        if(empname.value==""){
+            document.getElementById('emname').innerHTML="**please fill the Employee Name**";
+            document.getElementById('emname').style.color="red"
+            return false;
+        }
+
+        // if(isNaN(empname)){
+        //     document.getElementById('emname').innerHTML="**only characters are allowed**";
+        //     document.getElementById('emname').style.color="red"
+        //     return false;
+        // }
+        
+
+
+        if(phnumber.value==""){
+            document.getElementById('pno').innerHTML="**please fill the phone number **";
+            document.getElementById('pno').style.color="red"
+            return false;
+        }
+        // if(isNaN(phnumber)){
+        //     document.getElementById('pno').innerHTML="**please enter only digits no character is allowed**";
+        //     document.getElementById('pno').style.color="red"
+        //     return false;
+        // }
+        
+        if(email.value==""){
+            document.getElementById('el').innerHTML="**please fill the email_id**";
+            document.getElementById('el').style.color="red"
+            return false;
+        }
+
+        if(dep.value==""){
+            document.getElementById('deptfield').innerHTML="**please select the department **";
+            document.getElementById('deptfield').style.color="red"
+            return false;
+        }
+
+        if(gender.value==""){
+            document.getElementById('gndrfiled').innerHTML="**please select gender**";
+            document.getElementById('gndrfiled').style.color="red"
+            return false;
+        }
+        if(age.value==""){
+            document.getElementById('agefiled').innerHTML="**please select the age **";
+            document.getElementById('agefiled').style.color="red"
+            return false;
+        }
+        if(adrs.value==""){
+            document.getElementById('agefiled').innerHTML="**please fill the adrress**";
+            document.getElementById('agefiled').style.color="red"
+            return false;
+        }
+        if(knwtec.value==""){
+            document.getElementById('techfiled').innerHTML="**please select the known technology**";
+            document.getElementById('techfiled').style.color="red"
+            return false;
+        }
+        else{
+            alert('successfully added');
+            return true;
+        }
+
+ }
+
+</script>
+</html>

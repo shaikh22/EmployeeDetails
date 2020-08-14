@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="login.css">
+    <title>login page</title>
+</head>
+<body>
+    <section class="mainform">
+        <form onsubmit="return validate()" action="empdetails.html" method="post"> 
+            <div class="box">
+            <div class="form-head">
+                <h1>LOGIN</h1>
+            </div>
+    
+            <div class="form-body">
+            <label>Email</label><br>
+            <input type="email" id="eml" placeholder="Enter Email" autocomplete="off"><br>
+    
+            <label>Password</label><br>
+            <input type="password" id="pswd" placeholder="Enter Password" autocomplete="off"><br>
+        </div>
+        <div class="form-footer">
+            <!-- <button type="submit">Login</button> -->
+            <input type="submit" id="btnone" value="Login">
+            <input type="reset" id="btnone" value="Cancel">
+            <!-- <button>Cancel</button> -->
+        </div>
+    </div>
+        </section>
+        </form>
+    </body>
+<script>
+
+function validate(){
+    var email=document.getElementById('eml')
+    var passwd=document.getElementById('pswd')
+        if(email.value.trim()=== "" ){
+            alert('plz, Enter Email')
+            email.focus()
+            return false
+        }
+        if(passwd.value.trim()=== "" ){
+            alert('plz, Enter password')
+            passwd.focus()
+            return false
+        }
+    else{
+        alert('Login Successfull')
+        return true
+        
+    }    
+}
+</script>
+</html>

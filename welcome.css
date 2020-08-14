@@ -1,0 +1,47 @@
+*{
+    box-sizing: border-box;
+    outline: none !important;
+}
+body,
+html{
+    min-height: 140%;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    height: 500px;
+    background-image:url('images/p3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: serif;
+    background-color: rgba(0, 0, 0, 0.356);
+}
+
+.form-head{
+    text-align: center;
+    margin: 50px 0px;
+    color: #dfa54ee1;
+    text-shadow: rgb(172, 37, 82);
+    font-size: 5ch;
+    display: flex;
+    flex-direction: column;
+}
+.form-buttons{
+    position: absolute;
+    left: 50%;
+    top: 55%;
+    transform: translate(-50%, -50%);
+}
+.form-buttons button{
+    height: 40px;
+    border-radius: 10px;
+    padding: 10px 40px;
+    margin:10px 40px;
+    text-align: center;
+    color: white;
+    background-color: #b90b5cc4;
+    border: none;
+    
+}
+

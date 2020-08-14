@@ -1,0 +1,128 @@
+*{
+    box-sizing: border-box;
+    outline: none !important;
+}
+body,
+html{
+    min-height: 140%;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-image:url('images/bg1.jpg');
+    background-size: cover;
+    font-family: sans-serif;
+    background-color: rgba(0, 0, 0, 0.356);
+}
+
+.mainform .box{
+    position: absolute;
+    left: 45%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+}
+
+.mainform .box .form-head h1{
+    text-align: center;
+    /* left: 50%;
+    top: 20%; */
+    margin: 20px 0px;
+    margin-top: 300px;
+    color: #ffffff;
+    font-size: 4.5ch;
+}
+
+h2{
+    color: rgba(250, 237, 237, 0.76);
+}
+
+.mainform .box .form-body{
+    display: flex;
+    flex-direction: column;
+    color: rgba(243, 229, 229, 0.76);
+}
+.mainform .box .form-body input{
+    height: 40px;
+    margin-bottom: 5px;
+    border: 1px solid white;
+    width: 100%;
+    background-color: transparent;
+    border-radius: 10px;
+    /* text-align: center; */
+    color: floralwhite;
+
+}
+.mainform .box .form-footer input{
+    height: 40px;
+    border-radius: 10px;
+    padding: 0px 20px;
+    margin:5px 20px;
+    text-align: center;
+    color: white;
+    background-color: teal;
+    border: none;
+}
+.form-dropdown select{ 
+    height: 40px;
+    margin-bottom: 8px;
+    border: 1px solid white;
+    width: 100%;
+    background-color: transparent;
+    border-radius: 10px;
+    /* text-align: center; */
+    color: rgb(145, 140, 140);
+
+}
+.gndr{
+    color: rgba(243, 229, 229, 0.76);
+    
+}
+.form-footer button{
+    /* left: 500%;
+    top: 500%; */
+    transform: translate(100%, 100%);
+    height: 40px;
+    border-radius: 10px;
+    padding: 0px 20px;
+    margin:5px 20px;
+    text-align: center;
+    color: white;
+    background-color: teal;
+    border: none;
+}
+.age-form-dropdown{
+    color: rgba(243, 229, 229, 0.76);
+}
+.age-form-dropdown select{ 
+    height: 40px;
+    margin-bottom: 8px;
+    border: 1px solid white;
+    width: 100%;
+    background-color: transparent;
+    border-radius: 10px;
+    /* text-align: center; */
+    color: rgb(145, 140, 140);
+}
+.txtarea{
+    color: rgba(243, 229, 229, 0.76);   
+}
+.txtarea textarea{
+    background-color: rgba(92, 92, 92, 0.096); ;
+    color:rgba(243, 229, 229, 0.76); 
+}
+.knwtech-dropdowm{
+    color: rgba(243, 229, 229, 0.76);   
+}
+.knwtech-dropdowm select{
+    height: 40px;
+    margin-bottom: 8px;
+    border: 1px solid white;
+    width: 100%;
+    background-color: transparent;
+    border-radius: 10px;
+    /* text-align: center; */
+    color: rgb(145, 140, 140);
+}
